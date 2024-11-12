@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/main/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="mt-3 ms-3">
+        <button id="myComputersButton" class="btn btn-primary ms-2 mb-2 animate__animated animate__fadeInLeft" style="display: none;"
+            onclick="comp()">Komputerlərim</button>
+        <button class="btn btn-warning mb-2 col animate__animated animate__fadeInDown" onclick="galary()">Komputer alış-verişinə başla</button>
+
+        <a id="loginButton" href="../../Registration,Login/Html/login.html"><button
+                class="btn btn-success mb-2 col-2 ms-2 animate__animated animate__fadeInRight">Hesaba daxil olmaq</button></a>
+
+        <button id="logoutButton" class="btn btn-danger  col mb-2 animate__animated animate__fadeInUp">Hesabdan Çıxmaq</button>
+        <hr>
+    </div>
+
+    <h1 class="ms-4 animate__animated animate__bounceInDown" id="username">İstifadəçi adı:</h1>
+    <hr>
+
+    <div class="splide" id="splide" style="margin-left: 200px;margin-right: 200px;">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide"><img
+                        src="https://res.cloudinary.com/grover/image/upload/e_trim/b_white,c_pad,dpr_2.0,h_500,w_520/f_auto,q_auto/v1651074431/xspn6aw80hmwhmokdsbg.png"
+                        width="600px" height="auto" alt="Slide 1"></li>
+                <li class="splide__slide"><img
+                        src="https://res.cloudinary.com/grover/image/upload/e_trim/b_white,c_pad,dpr_2.0,h_500,w_520/f_auto,q_auto/v1659372487/gpgiu3zewrjz4idtw7hd.png"
+                        width="600px" height="auto" alt="Slide 2"></li>
+                <li class="splide__slide"><img
+                        src="https://res.cloudinary.com/grover/image/upload/e_trim/b_white,c_pad,dpr_2.0,h_500,w_520/f_auto,q_auto/v1605174589/mmkrkmezffs9yh8otplz.png"
+                        width="600px" height="auto" alt="Slide 3"></li>
+
+
+                <li class="splide__slide"><img
+                        src="https://i5.walmartimages.com/seo/Lenovo-IdeaPad-3i-14-FHD-Laptop-Intel-Core-i5-1135G7-8GB-256GB-SSD-Windows-11-Platinum-Grey-81X700FVUS_70701446-e63a-4490-a792-f7fdd3f7df00.8ede4ef5dbddddbc3d98b5a7383c53a0.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+                        width="600px" height="auto" alt="Slide 3"></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <script src="../JS/splide.js"></script>
+    <script src="../JS/username.js"></script>
+</body>
+
+</html>

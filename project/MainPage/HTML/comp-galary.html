@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <a style="text-decoration: none;" href="../../MainPage/HTML/index.html"><button
+            class="btn btn-warning ms-2 me-2  mt-2">Əsas səhifə </button></a>
+
+    <div class="container mt-5">
+        <h1>Карточки товаров</h1>
+        <div class="row">
+            <div class="col-lg-3 mb-4 ms-0">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active" onclick="location.reload()">No
+                        fiters</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-brand="Aser">Aser</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-brand="Asus">Asus</a>
+                    <a href="#" class="list-group-item list-group-item-action" data-brand="Lenovo">Lenovo</a>
+                </div>
+            </div>
+
+            <div class="modal fade" id="enlargedImageViewModal" tabindex="-1"
+                aria-labelledby="enlargedImageViewModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img id="enlargedImageView" src="" alt="Enlarged Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row" id="cardsContainer">
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Asus">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Asus</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 555-555-5555</p>  
+                                <p class="card-text">5437 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Aser">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Aser</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 445-345-3655</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal3">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mb-4" data-brand="Lenovo">
+                        <div class="card">
+                            <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                class="card-img-top" alt="${product.ad}">
+                            <div class="card-body">
+                                <p class="card-text">Ad: Lenovo</p>
+                                <p class="card-text">Təsvir: tesvir</p>
+                                <p class="card-text">Telefon: 345-315-5695</p>  
+                                <p class="card-text">5417 AZN</p>
+                                <button class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#buyModal2">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="buyModalLabel">Asus</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/93834/90nx06f1-m00650.jpg"
+                                    width="450px"><br>
+                                <p>Ad: Asus</p>
+                                <p>Təsvir:Təsvir</p>
+                                <p>Telefon: 555-555-5555</p>
+                                <p>Price: 2000 AZN</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="buyModal2" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="buyModalLabel">Asus</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/92080/lenovo-v15-g2-ijl-82qy00phue.png"
+                                    width="450px"><br>
+                                <p>Ad: Lenovo</p>
+                                <p>Təsvir:Təsvir</p>
+                                <p>Telefon: 555-555-5555</p>
+                                <p>Price: 1000 AZN</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="buyModal3" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="buyModalLabel">Asus</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="https://irshad.az/cdn-cgi/image/width=540,height=550/storage/products/83684/nxaduem00c.jpg"
+                                    width="450px"><br>
+                                <p>Ad: Lenovo</p>
+                                <p>Təsvir:Təsvir</p>
+                                <p>Telefon: 555-555-5555</p>
+                                <p>Price: 1000 AZN</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/comp-galary.js"></script>
+</body>
+
+</html>
